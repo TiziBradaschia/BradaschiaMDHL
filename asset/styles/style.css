@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Comics Sans MS", cursive, sans-serif;
+}
+h1 {
+  font-size: 70px;
+  padding: 10px;
+}
+h2 {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+.encabezado {
+  height: 250px;
+  margin: 2px;
+  border: 1px solid black;
+  background-image: url("../img/banner1.jpg");
+  background-size: 100% 250px;
+  opacity: 0.8;
+}
+.logo {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  border: 3px solid;
+}
+.logo > figure > img {
+  width: 130px;
+  height: 130px;
+  /*filter: drop-shadow(0 0 5px blue); util para sombrear la imagen*/
+  background-color: white;
+}
+.titulo {
+  margin: 2px;
+}
