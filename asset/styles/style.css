@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-family: "Comics Sans MS", cursive, sans-serif;
 }
 h1 {
@@ -16,15 +17,15 @@ h2 {
 }
 .encabezado {
   height: 250px;
-  margin: 2px;
-  border: 1px solid black;
+  /* margin: 2px; */
+  /* border: 1px solid black; */
   background-image: url("../img/banner1.jpg");
   background-size: 100% 250px;
   opacity: 0.8;
 }
 .logo {
   position: absolute;
-  top: 200px;
+  top: 170px;
   right: 100px;
   border: 3px solid;
 }
@@ -34,6 +35,47 @@ h2 {
   /*filter: drop-shadow(0 0 5px blue); util para sombrear la imagen*/
   background-color: white;
 }
-.titulo {
+/* .titulo {
   margin: 2px;
+} */
+main{
+   /* margin: 2px; */
+  /*border: 1px solid black;*/
+  position: relative;
+}
+nav{
+  display: inline-block;
+  /*border: 2px solid red;*/
+  width: 20%;
+  height: 100%;
+  position: absolute;
+}
+nav a{
+  display:block;
+  /*border: 2px solid pink;*/
+  padding: 15px;
+  margin: 3px;
+  color:black;
+}
+.linkinactivo{
+text-decoration: none;
+color:grey;
+}
+.section{
+ display: inline-block;
+ margin-left: 20%;
+  /*border: 2px solid green;*/
+  width: 80%;
+  height: 100%;
+  position: absolute;
+}
+article{
+  /*border: 2px solid yellow;*/
+  padding: 8px;
+  margin: 3px;
+}
+.article{
+ /* border: 2px solid yellow;*/
+  padding: 8px;
+  margin: 3px;
 }
