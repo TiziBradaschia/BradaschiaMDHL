@@ -28,9 +28,8 @@ h2 {
   top: 170px;
   right: 100px;
   border: 3px solid;
-  
- /* rotate: 53deg;  */
 
+  /* rotate: 53deg;  */
 }
 .logo > figure > img {
   width: 130px;
@@ -40,50 +39,49 @@ h2 {
 }
 .logo > figure > img:hover {
   filter: drop-shadow(0 0 5px blue); /*util para sombrear la imagen*/
-  background-color:none;
   transform: scale(1.5);
 }
 /* .titulo {
   margin: 2px;
 } */
-main{
-   /* margin: 2px; */
+main {
+  /* margin: 2px; */
   /*border: 1px solid black;*/
   position: relative;
 }
-nav{
+nav {
   display: inline-block;
   /*border: 2px solid red;*/
   width: 20%;
   height: 100%;
   position: absolute;
 }
-nav a{
-  display:block;
+nav a {
+  display: block;
   /*border: 2px solid pink;*/
   padding: 15px;
   margin: 3px;
-  color:black;
+  color: black;
 }
-.linkinactivo{
-text-decoration: none;
-color:grey;
+.linkinactivo {
+  text-decoration: none;
+  color: grey;
 }
-.section{
- display: inline-block;
- margin-left: 20%;
+.section {
+  display: inline-block;
+  margin-left: 20%;
   /*border: 2px solid green;*/
   width: 80%;
   height: 100%;
   position: absolute;
 }
-article{
+article {
   /*border: 2px solid yellow;*/
   padding: 8px;
   margin: 3px;
 }
-.article{
- /* border: 2px solid yellow;*/
+.article {
+  /* border: 2px solid yellow;*/
   padding: 8px;
   margin: 3px;
 }
