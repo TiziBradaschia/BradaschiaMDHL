@@ -28,12 +28,20 @@ h2 {
   top: 170px;
   right: 100px;
   border: 3px solid;
+  
+ /* rotate: 53deg;  */
+
 }
 .logo > figure > img {
   width: 130px;
   height: 130px;
   /*filter: drop-shadow(0 0 5px blue); util para sombrear la imagen*/
   background-color: white;
+}
+.logo > figure > img:hover {
+  filter: drop-shadow(0 0 5px blue); /*util para sombrear la imagen*/
+  background-color:none;
+  transform: scale(1.5);
 }
 /* .titulo {
   margin: 2px;
