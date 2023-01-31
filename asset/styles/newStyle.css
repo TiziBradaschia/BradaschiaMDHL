@@ -8,6 +8,7 @@ h1 {
   font-size: 70px;
   padding: 10px;
 }
+
 h2 {
   display: block;
   background-color: black;
@@ -15,10 +16,15 @@ h2 {
   text-align: center;
   font-size: 25px;
 }
+.flexHeader {
+  display: flex;
+  border: 2px solid green;
+  flex-direction: column;
+}
 .encabezado {
+  display: flex;
   height: 250px;
-  /* margin: 2px; */
-  /* border: 1px solid black; */
+  border: 2px solid black;
   background-image: url("../img/banner1.jpg");
   background-size: 100% 250px;
   opacity: 0.8;
@@ -41,45 +47,52 @@ h2 {
   filter: drop-shadow(0 0 5px blue); /*util para sombrear la imagen*/
   transform: scale(1.5);
 }
-/* .titulo {
-  margin: 2px;
-} */
-main {
-  /* margin: 2px; */
-  /*border: 1px solid black;*/
-  position: relative;
+.containerGameInformation {
+  display: flex;
+  border: 2px solid red;
+  height: 20rem;
 }
-nav {
-  display: inline-block;
-  /*border: 2px solid red;*/
-  width: 20%;
-  height: 100%;
-  position: absolute;
+.menuNavegacion {
+  display: flex;
+  border: 2px solid blue;
+  flex-direction: column;
+  align-content: space-around;
+  width: 10rem;
+  flex-grow: 0.5;
 }
 nav a {
-  display: block;
-  /*border: 2px solid pink;*/
+  border: 2px solid pink;
+  background-color:pink;
   padding: 15px;
-  margin: 3px;
-  color: black;
 }
 nav a:hover {
   transform: translate(10px);
+  /* cursor: crosshair; si quisiera cambiar el tipo de cursor*/
 }
 .linkinactivo {
   text-decoration: none;
   color: grey;
 }
-.section {
-  display: inline-block;
-  margin-left: 20%;
-  /*border: 2px solid green;*/
-  width: 80%;
-  height: 100%;
-  position: absolute;
+.tablaInformacion {
+  display: flex;
+  border: 2px solid yellow;
+  flex-grow: 10;
+  padding:15px;
+  /* background-image: url("../img/Logo_Mighty_ducks-01.png"); */
+  /* background-size: 100% 250px; */
 }
-article {
-  /*border: 2px solid yellow;*/
-  padding: 8px;
-  margin: 3px;
+table {
+  /* table-layout: fixed; */
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
 }
+th, td {
+  padding: 2px;
+  border: 2px solid purple;
+  letter-spacing: 1px;
+}
+th{
+  font-size:18px;
+  
+  }
