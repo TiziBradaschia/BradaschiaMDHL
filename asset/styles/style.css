@@ -20,26 +20,29 @@ h2 {
   /* margin: 2px; */
   /* border: 1px solid black; */
   background-image: url("../img/banner1.jpg");
-  background-size: 100% 250px;
-  opacity: 0.8;
+  background-position:center;
+  background-size:contain;
+ opacity: 0.9; 
 }
 .logo {
   position: absolute;
   top: 170px;
   right: 100px;
-  border: 3px solid;
-
+  filter: drop-shadow(0 0 5px blue);
+  
   /* rotate: 53deg;  */
 }
 .logo > figure > img {
-  width: 130px;
-  height: 130px;
-  /*filter: drop-shadow(0 0 5px blue); util para sombrear la imagen*/
-  background-color: white;
+  width: 150px;
+  height: 150px;
+   filter: drop-shadow(0 0 5px rgb(0, 255, 242)); /*util para sombrear la imagen */
+  
+
 }
 .logo > figure > img:hover {
   filter: drop-shadow(0 0 5px blue); /*util para sombrear la imagen*/
   transform: scale(1.5);
+  
 }
 /* .titulo {
   margin: 2px;

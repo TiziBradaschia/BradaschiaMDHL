@@ -7,6 +7,12 @@
 h1 {
   font-size: 70px;
   padding: 10px;
+  color: rgba(255, 255, 0, 0.767);
+  font-weight: bolder;
+  text-shadow: 4px 4px rgba(2, 2, 112, 0.925);
+  text-align: center;
+  transform: skewY(-5deg) skewX(-3deg) scaleX(0.8) scaleY(2) translateY(15%);
+ 
 }
 
 h2 {
@@ -18,32 +24,35 @@ h2 {
 }
 .flexHeader {
   display: flex;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   flex-direction: column;
 }
 .encabezado {
   display: flex;
   height: 250px;
-  border: 2px solid black;
-  background-image: url("../img/banner1.jpg");
-  background-size: 100% 250px;
-  opacity: 0.8;
+  /* border: 2px solid black; */
+  background-image:  url("../img/banner1.jpg");
+ 
+  flex-direction: column;
+  opacity: 0.9;
+  background-size:cover;
+  background-position:30% 20%;
 }
 .logo {
   position: absolute;
   top: 170px;
   right: 100px;
-  border: 3px solid;
-
+  filter: drop-shadow(0 0 5px blue);
   /* rotate: 53deg;  */
 }
-.logo > figure > img {
-  width: 130px;
-  height: 130px;
-  /*filter: drop-shadow(0 0 5px blue); util para sombrear la imagen*/
-  background-color: white;
+.logo > img {
+  width: 150px;
+  height: 150px;
+  filter: drop-shadow(
+    0 0 5px rgb(0, 255, 242)
+  ); /*util para sombrear la imagen */
 }
-.logo > figure > img:hover {
+.logo > img:hover {
   filter: drop-shadow(0 0 5px blue); /*util para sombrear la imagen*/
   transform: scale(1.5);
 }
@@ -52,17 +61,24 @@ h2 {
   border: 2px solid red;
   height: 20rem;
 }
+.containerRules {
+  display: flex;
+  border: 2px solid violet;
+  gap: 2px;
+  flex-direction: row;
+}
 .menuNavegacion {
   display: flex;
   border: 2px solid blue;
   flex-direction: column;
   align-content: space-around;
-  width: 10rem;
+  width: 15%;
   flex-grow: 0.5;
 }
 nav a {
   border: 2px solid pink;
-  background-color:pink;
+  background-color: pink;
+  color: blue;
   padding: 15px;
 }
 nav a:hover {
@@ -76,10 +92,37 @@ nav a:hover {
 .tablaInformacion {
   display: flex;
   border: 2px solid yellow;
-  flex-grow: 10;
-  padding:15px;
+  flex-grow: 8;
+  flex-wrap: wrap;
+  padding: 15px;
   /* background-image: url("../img/Logo_Mighty_ducks-01.png"); */
   /* background-size: 100% 250px; */
+}
+.conteinerCards {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid yellow;
+  /* background-image: url("../img/Logo_Mighty_ducks-01.png"); */
+  /* background-size: 100% 250px; */
+}
+.card {
+  display: flex;
+  border: 2px solid green;
+  min-height: 200px;
+  border-radius: 50 px;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 30%;
+}
+.tituloReglas {
+  display: flex;
+  border: 2px solid goldenrod;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 table {
   /* table-layout: fixed; */
@@ -87,12 +130,12 @@ table {
   border-collapse: collapse;
   text-align: center;
 }
-th, td {
+th,
+td {
   padding: 2px;
   border: 2px solid purple;
   letter-spacing: 1px;
 }
-th{
-  font-size:18px;
-  
-  }
+th {
+  font-size: 18px;
+}
