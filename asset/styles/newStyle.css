@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Comics Sans MS", cursive, sans-serif;
 }
+body {
+  /* Created with https://www.css-gradient.com */
+  background: #b7b296;
+  background: -webkit-radial-gradient(center, #b7b296, #1a8682);
+  background: -moz-radial-gradient(center, #b7b296, #1a8682);
+  background: radial-gradient(ellipse at center, #b7b296, #1a8682);
+}
 h1 {
   font-size: 70px;
   padding: 10px;
@@ -11,36 +18,33 @@ h1 {
   font-weight: bolder;
   text-shadow: 4px 4px rgba(2, 2, 112, 0.925);
   text-align: center;
-  transform: skewY(-5deg) skewX(-3deg) scaleX(0.8) scaleY(2) translateY(15%);
- 
+  transform: skewY(-4deg) skewX(-3deg) scaleX(0.8) scaleY(2); /* translateY(5%); */
 }
-
 h2 {
-  display: block;
-  background-color: black;
-  color: white;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+  font-weight: bold;
+  color: rgb(203, 208, 212);
 }
 .flexHeader {
   display: flex;
-  /* border: 2px solid green; */
   flex-direction: column;
 }
 .encabezado {
   display: flex;
-  height: 250px;
-  /* border: 2px solid black; */
-  background-image:  url("../img/banner1.jpg");
- 
+  height: 180px;
+  background-image: url("../img/banner1.jpg");
   flex-direction: column;
   opacity: 0.9;
-  background-size:cover;
-  background-position:30% 20%;
+  background-size: cover;
+  background-position: 30% 20%;
 }
 .logo {
   position: absolute;
-  top: 170px;
+  top: 130px;
   right: 100px;
   filter: drop-shadow(0 0 5px blue);
   /* rotate: 53deg;  */
@@ -56,30 +60,75 @@ h2 {
   filter: drop-shadow(0 0 5px blue); /*util para sombrear la imagen*/
   transform: scale(1.5);
 }
+.titulo {
+  background: #4256a4;
+  background: -webkit-radial-gradient(center, #4256a4, #171b1a);
+  background: -moz-radial-gradient(center, #4256a4, #171b1a);
+  background: radial-gradient(ellipse at center, #4256a4, #171b1a);
+}
 .containerGameInformation {
   display: flex;
-  border: 2px solid red;
-  height: 20rem;
 }
 .containerRules {
   display: flex;
-  border: 2px solid violet;
-  gap: 2px;
-  flex-direction: row;
+}
+.menuVertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
 }
 .menuNavegacion {
   display: flex;
-  border: 2px solid blue;
+  border: 3px double white;
   flex-direction: column;
   align-content: space-around;
-  width: 15%;
+  width: 75%;
+  height: 350px;
   flex-grow: 0.5;
+  padding: 10px;
+  margin: 15px 10px 10px 10px;
+  background-color: rgba(255, 255, 0, 0.767);
+  /* background-color:  rgba(34, 34, 27, 0.897); */
+  border-radius: 15%;
+}
+.menuNavegacionReglas {
+  width: 18%;
+}
+.contactGame {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 15px 10px 10px 10px;
+}
+.iconos {
+  width: 25px;
+  height: 25px;
 }
 nav a {
-  border: 2px solid pink;
-  background-color: pink;
-  color: blue;
+  /* border: 2px solid pink;
+  background-color: pink; */
+  color: rgba(7, 7, 5, 0.993);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* color:rgba(255, 255, 0, 0.767); */
   padding: 15px;
+  text-decoration: none;
+}
+nav a::before {
+  display: block;
+  content: "";
+  width: 5px;
+  background: #4256a4;
+  height: 0%;
+  left: 0;
+  position: absolute;
+  transition: 0.6s;
+}
+nav a:hover::before {
+  height: 50%;
 }
 nav a:hover {
   transform: translate(10px);
@@ -87,55 +136,202 @@ nav a:hover {
 }
 .linkinactivo {
   text-decoration: none;
-  color: grey;
+  color: rgb(66, 65, 65);
+}
+.linkinactivo:hover {
+  transform: none;
+  cursor: crosshair;
 }
 .tablaInformacion {
   display: flex;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   flex-grow: 8;
   flex-wrap: wrap;
   padding: 15px;
-  /* background-image: url("../img/Logo_Mighty_ducks-01.png"); */
-  /* background-size: 100% 250px; */
+  margin: 15px 5px 10px 5px;
+  background: #4256a4;
+  background: -webkit-radial-gradient(center, #4256a4, #171b1a);
+  background: -moz-radial-gradient(center, #4256a4, #171b1a);
+  background: radial-gradient(ellipse at center, #4256a4, #171b1a);
+  border-radius: 15px;
+  width: 65%;
 }
 .conteinerCards {
   width: 85%;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  border: 2px solid yellow;
-  /* background-image: url("../img/Logo_Mighty_ducks-01.png"); */
-  /* background-size: 100% 250px; */
+}
+.conteinerDates {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.conteinerAbout {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.conteinerContact {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+.conteinerContact > p > a > img {
+  width: 50px;
+  height: 50px;
 }
 .card {
   display: flex;
-  border: 2px solid green;
-  min-height: 200px;
-  border-radius: 50 px;
   padding: 20px;
-  overflow: hidden;
-  position: relative;
-  width: 30%;
+  margin: 10px;
+  gap: 20px;
+}
+.cardAbout {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  border-top: 2px dashed rgb(203, 208, 212);
+  border-left: 2px solid rgb(203, 208, 212);
+  border-radius: 20px;
 }
 .tituloReglas {
   display: flex;
-  border: 2px solid goldenrod;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
   width: 100%;
+  border-radius: 20px;
+  color: #171b1a;
+  font-size: 18px;
+}
+.tituloCard {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  background-color: #1a8682;
+  color: #171b1a;
+  border-radius: 20px;
+}
+.textoCard {
+  display: flex;
+  padding: 15px;
+}
+.card1 {
+  border-top: 2px dashed rgb(203, 208, 212);
+  border-left: 2px solid rgb(203, 208, 212);
+  border-radius: 20px;
+}
+.d1 {
+  align-self: flex-start;
+}
+.card2 {
+  border-top: 2px dashed rgb(203, 208, 212);
+  border-left: 2px solid rgb(203, 208, 212);
+  border-radius: 20px;
+}
+.d2 {
+  align-self: center;
+}
+.card3 {
+  border-top: 2px dashed rgb(203, 208, 212);
+  border-left: 2px solid rgb(203, 208, 212);
+  border-radius: 20px;
+  flex-direction: column;
+}
+.d3 {
+  align-self: flex-end;
 }
 table {
   /* table-layout: fixed; */
   width: 100%;
   border-collapse: collapse;
   text-align: center;
+  border: 1px;
+  border-radius: 15px;
 }
 th,
 td {
   padding: 2px;
-  border: 2px solid purple;
   letter-spacing: 1px;
 }
 th {
   font-size: 18px;
+  color: white;
+}
+td {
+  color: rgba(255, 255, 0, 0.767);
+}
+td:hover {
+  color: white;
+  cursor: default;
+}
+caption {
+  color: rgb(248, 58, 58);
+  font-style: oblique;
+}
+.footer-flex {
+  display: flex;
+  justify-content: right;
+  border-top: 5px inset white;
+  padding: 10px;
+  font-style: oblique;
+  font-weight: bold;
+  color: #171b1a;
+}
+.infoGame {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 15px 10px 10px 10px;
+  width: 10%;
+  align-items: center;
+  align-content: stretch;
+  color: #171b1a;
+  text-shadow: 1px 1px white;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.galeria {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.galeria > img {
+  width: "300px";
+  height: "300px";
+}
+.galeria img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.galeria img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+ul {
+  list-style-type: lower-latin;
+  list-style-position: inside;
 }

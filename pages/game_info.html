@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../asset/styles/newStyle.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link
       rel="shortcut icon"
       href="../asset/img/Logo-Mighty-ducks-01.ico"
@@ -19,36 +20,69 @@
           <h1>Migthy Ducks Hockey League</h1>
         </div>
         <div class="logo">
-          
-            <img
-              src="../asset/img/Logo_Mighty_ducks-01.png"
-              alt="Logo_Mighty_ducks"
-            />
-          
+          <img
+            src="../asset/img/Logo_Mighty_ducks-01.png"
+            alt="Logo_Mighty_ducks"
+          />
         </div>
-        <div class="titulo"><h2>Game Information</h2></div>
+        <div class="titulo">
+          <h2>Game Information</h2>
+        </div>
       </div>
     </header>
-  
-      <main class="containerGameInformation">
+    <main class="containerGameInformation">
+      <div class="menuVertical">
         <nav class="menuNavegacion">
           <a href="../index.html">Home</a>
           <a href="../pages/aboutMDHL.html">About MDHL</a>
           <a href="../pages/contact.html">Contact</a>
           <a class="linkinactivo" href="#">Game Information</a>
           <a href="../pages/rules.html">Rules</a>
+          <a href="./gallery.html">Gallery</a>
         </nav>
+        <div class="contactGame">
+          <article class="contactArticle">
+            <h4>Please direct all questions to:</h4>
+            <p>Micheal Randall, League Coordinator</p>
+            <h4>Phone:</h4>
+            <p>
+              <a href="tel:+546306908132"
+                ><img
+                  class="iconos"
+                  src="../asset/img/phone1.png"
+                  alt="telefono"
+                />(630)690-8132</a
+              >
+            </p>
+            <h4>E-mail:</h4>
+            <p>
+              <a href="mailto:michael.randall@chihockey.org">
+                <img
+                  class="iconos"
+                  src="../asset/img/Email.png"
+                  alt="mail"
+                />michael.randall@chihockey.org</a
+              >
+            </p>
+          </article>
+        </div>
+      </div>
+      <div class="tablaInformacion">
+        <table>
+          <caption>
+            <p>Fall Schedule</p>
+            <p>*All games take place on Saturday</p>
+          </caption>
 
-        <div class="section tablaInformacion">
-          <table>
-            <caption></caption>
-            <thead></thead>
+          <thead>
             <tr>
               <th>SEPTEMBER</th>
               <th>Teams</th>
               <th>Location</th>
               <th>Times</th>
             </tr>
+          </thead>
+          <tbody>
             <tr>
               <td rowspan="2">9/01</td>
               <td>U1 and U14</td>
@@ -100,10 +134,25 @@
               <td>Greenbay</td>
               <td>9.30 a.m.</td>
             </tr>
-          </table>
-        </div>
-      </main>
+          </tbody>
+        </table>
+      </div>
+      <div class="infoGame">
+        <article>
+          <h4>Facility Type:</h4>
+          <p>Outdoor</p>
+        </article>
+        <article>
+          <h4>Additional Information:</h4>
+          <p>
+            In deemed necessary by MDHL James may be shortened or cancelled due
+            to ectreme weather conditions.
+          </p>
+        </article>
+      </div>
     </main>
-    <footer></footer>
+    <footer class="footer-flex">
+      <p>Copyright Tiziana M. Bradaschia</p>
+    </footer>
   </body>
 </html>
