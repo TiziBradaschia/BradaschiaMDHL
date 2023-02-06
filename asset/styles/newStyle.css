@@ -80,17 +80,18 @@ h2 {
 }
 .menuNavegacion {
   display: flex;
-  border: 3px double white;
+  /* border: 3px double white; */
+  box-shadow: 0px 0px 6px 6px #171b1a;
   flex-direction: column;
   align-content: space-around;
   width: 75%;
-  height: 350px;
+  height: 450px;
   flex-grow: 0.5;
   padding: 10px;
   margin: 15px 10px 10px 10px;
   background-color: rgba(255, 255, 0, 0.767);
   /* background-color:  rgba(34, 34, 27, 0.897); */
-  border-radius: 15%;
+  border-radius:15%;
 }
 .menuNavegacionReglas {
   width: 18%;
@@ -334,4 +335,12 @@ caption {
 ul {
   list-style-type: lower-latin;
   list-style-position: inside;
+}
+.containerFormulario{
+  display: flex;
+ border: 5px solid white;
+ }
+.formularioInscripcion{
+  display: flex;
+  border: 2px solid green;
 }
