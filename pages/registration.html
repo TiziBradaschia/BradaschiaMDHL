@@ -26,7 +26,7 @@
       <div class="titulo"><h2>registration</h2></div>
     </header>
     <main class="containerFormulario">
-      <nav class="menuNavegacion">
+      <nav class="menuNavegacion menuNavegacionRegistration">
         <a href="../index.html">Home</a>
         <a href="../pages/aboutMDHL.html">About MDHL</a>
         <a href="../pages/contact.html">Contact</a>
@@ -37,82 +37,81 @@
       </nav>
       <div class="formularioInscripcion">
       <form action="./show_data.html" method="get">
-        
         <fieldset class="firstName">
-          <legend for="firstName">Player's first name:</legend>
-          <input type="text" name="firstName"id="firstName" placeholder="First Name"required ></input>
+          <legend>Player's first name:</legend>
+          <input type="text" name="firstName" id="firstName" placeholder="First Name" required > </input>
         </fieldset>
-          <fieldset class="lastName">
-          <legend for="lastName">Last name:</legend>
-          <input type="text" name="lastName"id="lastName"placeholder="Last Name" required></input>
-        </fieldset>
-        <fieldset class="streetAdress">
-          <legend for="streetAdress">Street Adress:</legend>
-          <input type="text" name="streetAdress" id="streetAdress" placeholder="Street Adress"required></input>
-        </fieldset>
-        <fieldset class="city">
-          <legend for="city">City:</legend>
-          <input type="city" name="city"id="city" placeholder="City" required></input>
-        </fieldset>
-        <fieldset class="zipCode">
-          <legend for="zipCode">Zip code:</legend>
-          <input type="text" name="zipCode"id="zipCode" placeholder="Zip Code" required></input>
+        <fieldset class="lastName">
+          <legend>Last name:</legend>
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name" required ></input>
         </fieldset>
         <fieldset class="birthDate">
-         <legend for="birthDate">Birth Date:</legend>
-         <input type="date" name="birthDate"id="birthDate" required></input>
+          <legend>Birth Date:</legend>
+          <input type="date" name="birthDate" id="birthDate" required ></input>
+        </fieldset>
+        <fieldset class="streetAdress">
+          <legend>Street Adress:</legend>
+          <input type="text" name="streetAdress" id="streetAdress" placeholder="Street Adress" required ></input>
+        </fieldset>
+        <fieldset class="city">
+          <legend>City:</legend>
+          <input type="text" name="city" id="city" placeholder="city" required ></input>
+        </fieldset>
+        <fieldset class="zipCode">
+          <legend>Zip code:</legend>
+          <input type="text" name="zipCode" id="zipCode" placeholder="Zip Code" required ></input>
         </fieldset>
         <fieldset class="gender">
-          <legend for="gender">Gender:</legend>
-          <input type="radio" name="gender"id="gender" value="female" checked>Female</input>
-          <input type="radio" name="gender"id="gender" value="male">Male</input>
+          <legend>Gender:</legend>
+          <input type="radio" name="gender" value="female" checked>Female</input>
+          <input type="radio" name="gender"  value="male">Male</input>
+          <input type="radio" name="gender"  value="other">Other</input>
         </fieldset>
         <fieldset class="grade">
-          <legend for="grade">Grade:</legend>
-          <input type="radio" name="grade"id="grade"  value="pre"checked>Pre-School</input>
-          <input type="radio" name="grade"id="grade" value="01 st">01 st</input>
-          <input type="radio" name="grade"id="grade"value="02 st">02 st</input>
-          <input type="radio" name="grade"id="grade"value="03 st">03 st</input>
-          <input type="radio" name="grade"id="grade"value="04 st">04 st</input>
-          <input type="radio" name="grade"id="grade"value="05 st">05 st</input>
+          <legend>Grade:</legend>
+          <input type="radio" name="grade" value="pre" checked>Pre-School</input>
+          <input type="radio" name="grade" value="01 st">01 st</input>
+          <input type="radio" name="grade" value="02 st">02 st</input>
+          <input type="radio" name="grade" value="03 st">03 st</input>
+          <input type="radio" name="grade" value="04 st">04 st</input>
+          <input type="radio" name="grade" value="05 st">05 st</input>
         </fieldset>
         <fieldset class="nearSchool">
-          <legend for="nearSchool">Which elementary school do you live near?</legend>
+          <legend>Which elementary school do you live near?</legend>
           <label for="nearSchool">Closest School:</label>
-       
-        <select class="nearSchool" id="nearSchool"required>
-          <option value="" disabled selected>Select an option</option>
-         <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-         <option value="Greenbay">Greenbay</option>
-         <option value="Howard A Yeage">Howard A Yeage</option>
-         <option value="Marjorie P Hart">Marjorie P Hart</option>
-         <option value="North Elementary">North Elementary</option>
-         <option value="South Elementary">South Elementary</option>
+          <select class="nearSchool" id="nearSchool" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+            <option value="Greenbay">Greenbay</option>
+            <option value="Howard A Yeage">Howard A Yeage</option>
+            <option value="Marjorie P Hart">Marjorie P Hart</option>
+            <option value="North Elementary">North Elementary</option>
+             <option value="South Elementary">South Elementary</option>
+          </select>
+        </fieldset>
+        <fieldset class="uniformSize">
+          <legend>Uniform Size:</legend>
+          <select class="uniformSize" id="uniformSize" required>
+           <option value="" disabled selected>Select an uniform size</option>
+           <option value="Youth Small">Youth Small</option>
+           <option value="Youth Medium">Youth Medium</option>
+           <option value="Youth Large">Youth Large</option>
+           <option value="Small">Small</option>
+           <option value="Medium">Medium</option>
+           <option value="Large">Large</option>
+           <option value="Extra-Large">Extra-Large</option>
           </select>
         </fieldset>
         <fieldset class="positionPlay">
-          <legend for="positionPlay"> What position(s) do you normally play? (check all that apply)</legend>
-          <input type="checkbox" name="positionPlay"id="positionPlay" value="forward">Forward</input>
-          <input type="checkbox" name="positionPlay"id="positionPlay" value="defense">Defense</input>
-          <input type="checkbox" name="positionPlay"id="positionPlay"value="midfield">Midfield</input>
-          <input type="checkbox" name="positionPlay"id="positionPlay"value="goalkeeper">Goalkeeper</input>
-       </fieldset>
-       <fieldset class="uniformSize">
-        <legend for="uniformSize">Uniform Size:</legend>
-      <select class="uniformSize" id="uniformSize" required>
-        <option value="" disabled selected>Select an uniform size</option>
-       <option value="Youth Small">Youth Small</option>
-       <option value="Youth Medium">Youth Medium</option>
-       <option value="Youth Large">Youth Large</option>
-       <option value="Small">Small</option>
-       <option value="Medium">Medium</option>
-       <option value="Large">Large</option>
-       <option value="Extra-Large">Extra-Large</option>
-        </select>
-      </fieldset>
-      <section class="aclaracionFormulario">
-        <h4>Permission to Play</h4>
-        <article>
+         <legend> What position(s) do you normally play? (check all that apply)</legend>
+         <input type="checkbox" name="positionPlay" value="forward">Forward</input>
+         <input type="checkbox" name="positionPlay" value="defense">Defense</input>
+         <input type="checkbox" name="positionPlay" value="midfield">Midfield</input>
+         <input type="checkbox" name="positionPlay" value="goalkeeper">Goalkeeper</input>
+        </fieldset>
+        <section class="aclaracionFormulario">
+          <h4>Permission to Play</h4>
+          <div class="article">
           I, the parent or guardian of the minor registrant, agree that the
           registrant and I will abide by all the rules of the Mighty Ducks
           Hockey League (MOHL). In recognizing the possibility of physical
@@ -126,20 +125,21 @@
           activities,which transportation By signing below, I herebyagree
           andauthorizethe above.In addition, by signing below, lalso acknowledge
           that I have read the cancellation policy and agree to its terms.
-        </article>
-        <article>
-          ParenVGuardianSignature:___________________________________________________
-        </article>
-        <article>
-          Date:___________________________________________________
-        </article>
-      </section>
-        <button type="submit">Acept</button>
-        <button type="reset">Reset</button>
-        <button type="button" onclick="window.print()">Print form</button>
+          </div>
+          <div class="article">
+          <p>ParenVGuardianSignature:________________________________</p>
+          </div>
+          <div class="article">
+           <p>Date:___________________________________________________</p> 
+           </div>
+        </section>
+       <div class="boton">
+          <button class="a" type="submit">Acept</button>
+          <button class="r" type="reset">Reset</button>
+          <button class="p" type="button" onclick="window.print()">Print form</button>
+        </div>
       </form>
-    </div>
-   
+      </div><!--cierre clase formulario-->
     </main>
     <footer class="footer-flex">
       <p>Copyright Tiziana M. Bradaschia</p>

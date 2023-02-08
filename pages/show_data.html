@@ -1,18 +1,48 @@
-<html>
-<head>
-<title>Feedback Sent</title>
-</head>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../asset/styles/newstyle.css" />
+    <link
+      rel="shortcut icon"
+      href="../asset/img/Logo-Mighty-ducks-01.ico"
+      type="image/x-icon"
+    />
+    <title>Feedback Sent</title>
+  </head>
+
 <body>
-<p align=center>&nbsp;</p>
-<h1 align=center><font size="+1">The following information has been sent as your
-  feedback:</font></h1>
-
-<table border="1" align=center width="226">
-  <tr>
-    <th align="center">Form Field</th>
-    <th align="center">Field Value</th>
-  </tr>
-
+  <header>
+    <div class="encabezado">
+      <h1>Migthy Ducks Hockey League</h1>
+    </div>
+    <div class="logo">
+      <img
+        src="../asset/img/Logo_Mighty_ducks-01.png"
+        alt="Logo_Mighty_ducks"
+      />
+    </div>
+    <div class="titulo"><h2 class="h2ShowData">The following information has been sent</h2><h2 class="h2ShowData"> as your
+      feedback</h2></div>
+  </header>
+  <main class="containerRegistrationInformation">
+    <nav class="menuNavegacion navRegistro">
+          <a href="../index.html">Home</a>
+          <a href="../pages/aboutMDHL.html">About MDHL</a>
+          <a href="../pages/contact.html">Contact</a>
+          <a class="linkinactivo" href="#">Game Information</a>
+          <a href="../pages/rules.html">Rules</a>
+          <a href="./registration.html">Registration</a>
+          <a href="./gallery.html">Gallery</a>
+        </nav>
+       <div class="superRegistro">
+ <table class="tablaRegistro">
+    <tr>
+    <th>FORM FIELD</th>
+    <th>FIELD</th>
+    </tr>
 <script language="javascript">
 var args = location.search.substr(1).split('&');
 for (var i = 0; i < args.length; ++i) {
@@ -26,17 +56,14 @@ for (var i = 0; i < args.length; ++i) {
     else {
       value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
     }
-
-    document.writeln('<tr><td align="center">' + field + '</td>');
-    document.writeln('<td align="center">' + value + '</td></tr>');
-  }
+    document.writeln('<tr><td class="tdInformation1" >' + field + '</td>');
+    document.writeln('<td class="tdInformation">' + value + '</td></tr>');
+     }
 }
 </script>
-
 <noscript>
 <tr><td>
 <p>You need to turn on Javascript in your browser.</p>
-
 <p>In Microsoft Internet Explorer 4 or greater:</p>
 <ul>
 <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
@@ -45,7 +72,6 @@ for (var i = 0; i < args.length; ++i) {
 and then click on "Settings...".)</li>
 <li>Under "Active scripting" make sure "Enable" is selected.</li>
 </ul>
-
 <p>In Netscape version 4 or greater:</p>
 <ul>
 <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
@@ -53,10 +79,14 @@ and then click on "Settings...".)</li>
 <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
 <li>Click the <b>OK</b> button.</li>
 </ul>
-
 </td></tr>
 </noscript>
-
 </table>
+</div>
+</main >
+<footer class="footer-flex">
+  <p>Copyright Tiziana M. Bradaschia</p>
+</footer>
 </body>
+
 </html>
